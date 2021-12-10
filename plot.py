@@ -22,6 +22,8 @@ class Plot:
     
     def plot_training_and_ideal(self):
 
+        output_file("output/chosen-ideal-functions.html")
+
         # Get data from database class
         data_actions = DataBase()
         td = data_actions.read_training_data()
@@ -37,7 +39,7 @@ class Plot:
         s1.circle(x, y1, size=3, color="#53777a", alpha=0.8)
 
         # create plot with ideal data y16
-        s2 = figure(width=215, height=170, background_fill_color="#fafafa", title="Choosen ideal function (Y16)")
+        s2 = figure(width=215, height=170, background_fill_color="#fafafa", title="Chosen ideal function (Y16)")
         s2.circle(x, i_y1, size=3, color="#c02942", alpha=0.8)
     
         y2 = [y2[2] for y2 in td]
@@ -48,7 +50,7 @@ class Plot:
         s3.circle(x, y2, size=3, color="#53777a", alpha=0.8)
 
         # create plot with ideal data y20
-        s4 = figure(width=215, height=170, background_fill_color="#fafafa", title="Choosen ideal function (Y20)")
+        s4 = figure(width=215, height=170, background_fill_color="#fafafa", title="Chosen ideal function (Y20)")
         s4.circle(x, i_y2, size=3, color="#c02942", alpha=0.8)
         
         y3 = [y3[3] for y3 in td]
@@ -59,7 +61,7 @@ class Plot:
         s5.circle(x, y3, size=3, color="#53777a", alpha=0.8)
 
         # create plot with ideal data y3
-        s6 = figure(width=215, height=170, background_fill_color="#fafafa", title="Choosen ideal function (Y11)")
+        s6 = figure(width=215, height=170, background_fill_color="#fafafa", title="Chosen ideal function (Y11)")
         s6.circle(x, i_y3, size=3, color="#c02942", alpha=0.8)
 
         y4 = [y4[4] for y4 in td]
@@ -70,7 +72,7 @@ class Plot:
         s7.circle(x, y4, size=3, color="#53777a", alpha=0.8)
 
         # create plot with ideal data y3
-        s8 = figure(width=215, height=170, background_fill_color="#fafafa", title="Choosen ideal function (Y18)")
+        s8 = figure(width=215, height=170, background_fill_color="#fafafa", title="Chosen ideal function (Y18)")
         s8.circle(x, i_y4, size=3, color="#c02942", alpha=0.8)
         
         # make a grid
@@ -80,7 +82,7 @@ class Plot:
     def plot_test_ideal_data_points(self):
 
         # output to static HTML file
-        output_file("scatter.html")
+        output_file("output/testdata-mapped-to-idealdata.html")
 
         # Get data from stats class
         data = Stats()

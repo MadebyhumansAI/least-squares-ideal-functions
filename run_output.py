@@ -20,13 +20,11 @@ def main():
     data_actions.insert_training_data()
     data_actions.insert_ideal_data()
 
-    #print(data_actions.read_training_data())
+    # plot chose ideal functions
     plot_actions = Plot()
     plot_actions.plot_training_and_ideal()
 
-    # stats_actions = Stats()
-    # stats_actions.map_test_data()
-
+    # plot testdata mapped to ideal data, in this class table three is created 
     plot_actions.plot_test_ideal_data_points()
 
 # run the program
