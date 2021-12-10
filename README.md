@@ -26,4 +26,4 @@ pip install -r requirements.txt
 
 ## Run main program 
 
-python3 run_all.py 
+python3 run_output.py
