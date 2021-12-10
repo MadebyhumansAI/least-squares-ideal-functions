@@ -6,8 +6,10 @@ pip install virtualenv virtualenvwrapper
  
 Use vim or nano to open ~/.bashrc and paste the next three line, save the file when done: 
  
-export WORKON_HOME=$HOME/.virtualenvs 
+export WORKON_HOME=$HOME/.virtualenvs
+
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 
+
 source /usr/local/bin/virtualenvwrapper.sh 
 
 ## Source ~/.bashrc for changes to take place 
@@ -24,4 +26,4 @@ pip install -r requirements.txt
 
 ## Run main program 
 
-python3 run_all.py 
+python3 run_output.py
