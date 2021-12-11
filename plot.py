@@ -107,13 +107,4 @@ class Plot:
         # give title to legend
         p.legend.title = "Mapped points"
 
-        show(p)
-        
-
-        
-        
-        
-        
-        
-        
-            
+        show(p)    
